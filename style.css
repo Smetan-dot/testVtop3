@@ -173,7 +173,8 @@ main {
 .news-block {
     position: relative;
     right: 5px;
-    width: 467px;
+    width: 88%;
+    max-width: 467px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -300,17 +301,99 @@ footer {
     fill: #a4c3f5;
 }
 
-@media screen and (max-width: 320px) {
-    body {
-        height: 1438px;
-        background-size: contain, contain;
-        background-position: 0 7%, bottom right;
+@media screen and (max-width: 1800px) {
+    .title {
+        font-size: 72px;
+        line-height: 72px;
     }
 
+    .description {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .news-block {
+        width: 85%;
+    }
+
+    .news-item {
+        padding: 15px 45px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .news-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .banner-line {
+        gap: 68px;
+    }
+
+    #line1 {
+        margin-top: 110px;
+    }
+
+    .static {
+        width: 66px;
+    }
+
+    .title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .description {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .title-button {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .logo {
+        width: 5%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    header {
+        padding: 24px;
+    }
+
+    .blog-title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .blog-news {
+        width: 20vw;
+        border-radius: 50px;
+    }
+
+    .news-block {
+        border-radius: 25px;
+    }
+
+    .news-item {
+        border-radius: 25px;
+        padding: 15px;
+    }
+
+    footer {
+        padding: 40px 40px 20px 40px;
+    }
+}
+
+@media screen and (max-width: 970px) {
     header {
         top: 10px;
         width: 93.75%;
-        max-width: 300px;
         height: 56px;
         padding: 10px 14px;
         border: 2px solid #478BF9;
@@ -423,25 +506,25 @@ footer {
     main {
         flex-direction: column;
         width: 93.75%;
-        max-width: 300px;
     }
 
     .title-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         top: 135px;
         left: -1px;
     }
 
     .title {
-        font-size: 46px;
+        font-size: 50px;
         line-height: 50px;
-        text-align: center;
     }
 
     .description {
         margin: 15px 0 20px 0;
-        font-size: 20px;
-        line-height: 26px;
-        text-align: center;
+        font-size: 24px;
+        line-height: 28px;
     }
 
     .title-button {
@@ -463,7 +546,7 @@ footer {
     .banner-line {
         height: 55px;
         flex-direction: row;
-        gap: 13px;
+        gap: 75px;
         margin: 0;
     }
 
@@ -473,12 +556,13 @@ footer {
 
     #line2 {
         position: relative;
-        right: 36px;
+        right: -76px;
     }
 
     #line1 {
         position: relative;
         right: 60px;
+        margin-top: 0;
     }
 
     .static {
@@ -505,7 +589,7 @@ footer {
     }
 
     .blog-news {
-        width: 300px;
+        width: 320px;
         height: 421px;
         border-width: 2px;
         border-radius: 50px;
@@ -542,7 +626,6 @@ footer {
         justify-content: flex-start;
         gap: 17px;
         top: 78px;
-        max-width: 320px;
         height: 233px;
         border-width: 2px;
         border-radius: 50px 50px 0 0;
@@ -577,5 +660,47 @@ footer {
     .link svg {
         width: 27px;
         height: 27px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        height: 1438px;
+        background-size: contain, contain;
+        background-position: 0 7%, bottom right;
+    }
+
+    header {
+        max-width: 300px;
+    }
+
+    main {
+        max-width: 300px;
+    }
+
+    .title {
+        font-size: 46px;
+        line-height: 50px;
+    }
+
+    .description {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .banner-line {
+        gap: 13px;
+    }
+
+    #line2 {
+        right: 36px;
+    }
+
+    .blog-news {
+        width: 300px;
+    }
+
+    footer {
+        max-width: 320px;
     }
 }
